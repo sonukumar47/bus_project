@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bus Finder</title>
+  <style>
+    body {
+      font-family: Arial;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f5f6fa;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      width: 340px;
+      text-align: center;
+    }
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h3>Find Buses</h3>
+    <form method="post" action="search.php">
+      <input type="text" name="source" placeholder="Enter Source (e.g., Majestic)" required />
+      <input type="text" name="destination" placeholder="Enter Destination (e.g., BTM Layout)" required />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+</html>
